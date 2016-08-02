@@ -1,4 +1,4 @@
-package com.eaphone.test.webapp.controller;
+package com.test.webapp2.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -18,5 +18,11 @@ public class IndexController {
 	public String anotherPage(ModelMap m) {
 		m.put("welcome", "Hello page1");
 		return "pages/page1";
+	}
+
+	@RequestMapping(value = "/page/2", method = RequestMethod.GET)
+	public String page2(ModelMap m) {
+		m.put("welcome", "Hello page2");
+		return "pages/page2";
 	}
 }

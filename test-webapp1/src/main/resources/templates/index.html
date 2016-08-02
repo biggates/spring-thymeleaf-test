@@ -1,7 +1,6 @@
-<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 
   <head>
     <title>Good Thymes Virtual Grocery</title>
@@ -9,11 +8,12 @@
   </head>
 
   <body>
-  	<nav th:fragment="nav">THIS IS THE NAVIGATION BAR</nav>
+  	<nav th:fragment="nav">THIS IS THE NAVIGATION BAR in app1</nav>
   
     <p th:text="${welcome}">Welcome to our grocery store!</p>
   
-  	<p><a href="page/1">page1</a></p>
+  	<p><a href="./page/1">app1 page1</a></p>
+  	<p><a href="./page/2">app1 page2</a></p>
   </body>
 
 </html>

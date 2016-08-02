@@ -16,7 +16,7 @@
 	<mvc:default-servlet-handler />
 
 	<!-- 将注解了的类添加到Spring容器中， 可以使用@Autowired -->
-	<context:component-scan base-package="com.eaphone.test.webapp.controller">
+	<context:component-scan base-package="com.test.webapp2.controller">
 		<context:include-filter type="annotation"
 			expression="org.springframework.web.bind.annotation.RestController" />
 		<context:include-filter type="annotation"
