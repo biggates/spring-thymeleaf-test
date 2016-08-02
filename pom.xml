@@ -8,14 +8,8 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<passport.version>0.0.1-SNAPSHOT</passport.version>
-		<easemob.version>2.0.1-SNAPSHOT</easemob.version>
-		<common.version>0.0.1-SNAPSHOT</common.version>
 		<jiankang.version>0.0.1-SNAPSHOT</jiankang.version>
-		<wenzhen.version>0.0.1-SNAPSHOT</wenzhen.version>
 
-		<quartz.version>2.2.1</quartz.version>
-		
 		<!-- 其他 Plugin 的属性 -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
@@ -33,21 +27,27 @@
 
 			<dependency>
 				<groupId>com.eaphone.jiankang</groupId>
-				<artifactId>common-core</artifactId>
-				<version>${common.version}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>com.eaphone.jiankang</groupId>
 				<artifactId>jiankang-webbase</artifactId>
 				<version>${jiankang.version}</version>
 			</dependency>
-            <dependency>
-                <groupId>com.eaphone.jiankang</groupId>
-                <artifactId>jiankang-webbase-test</artifactId>
-                <version>${jiankang.version}</version>
-                <scope>test</scope>
-            </dependency>
+			<dependency>
+				<groupId>com.eaphone.jiankang</groupId>
+				<artifactId>jiankang-webbase-test</artifactId>
+				<version>${jiankang.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.test</groupId>
+				<artifactId>test-commons</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>nz.net.ultraq.thymeleaf</groupId>
+				<artifactId>thymeleaf-layout-dialect</artifactId>
+				<version>2.0.1</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
