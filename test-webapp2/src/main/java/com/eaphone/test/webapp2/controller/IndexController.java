@@ -1,4 +1,4 @@
-package com.eaphone.test.webapp.controller;
+package com.eaphone.test.webapp2.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
