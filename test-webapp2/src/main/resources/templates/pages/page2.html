@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" layout:decorate="~{inc/all}">
+
+  <head>
+    <title>Good Thymes Virtual Grocery</title>
+    <meta http-equiv="
+	Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+	<nav th:replace="index :: nav"></nav>
+
+	<div layout:fragment="content">
+		<p th:text="${welcome}">Welcome to our grocery store!</p>
+
+		<p>This page uses a template inside commons</p>
+		<p>这个页面使用的是 commons 中的模板</p>
+
+		<p>
+			<a href="../">app2 index</a>
+		</p>
+	</div>
+</body>
+
+</html>

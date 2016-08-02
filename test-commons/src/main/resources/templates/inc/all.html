@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Good Thymes Virtual Grocery</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" th:fragment="nav">THIS IS THE NAVIGATION BAR in commons</nav>
+	<div class="container" layout:fragment="content">
+		<p th:text="${welcome}">Welcome to our grocery store!</p>
+
+		<p>
+			<a href="./page/1">page1</a>
+		</p>
+
+	</div>
+</body>
+
+</html>
