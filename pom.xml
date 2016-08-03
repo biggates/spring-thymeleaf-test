@@ -17,30 +17,43 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- Spring -->
 			<dependency>
-				<groupId>com.eaphone.jiankang</groupId>
-				<artifactId>eaphone-mvc-bom</artifactId>
-				<version>0.0.2-SNAPSHOT</version>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-framework-bom</artifactId>
+				<version>4.2.6.RELEASE</version>
 				<type>pom</type>
 				<scope>import</scope>
-			</dependency>
-
-			<dependency>
-				<groupId>com.eaphone.jiankang</groupId>
-				<artifactId>jiankang-webbase</artifactId>
-				<version>${jiankang.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.eaphone.jiankang</groupId>
-				<artifactId>jiankang-webbase-test</artifactId>
-				<version>${jiankang.version}</version>
-				<scope>test</scope>
 			</dependency>
 
 			<dependency>
 				<groupId>com.test</groupId>
 				<artifactId>test-commons</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			
+			<!-- thymeleaf -->
+			<dependency>
+				<groupId>org.thymeleaf</groupId>
+				<artifactId>thymeleaf-spring4</artifactId>
+				<version>3.0.1.RELEASE</version>
+			</dependency>
+
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-classic</artifactId>
+				<version>1.1.7</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>jcl-over-slf4j</artifactId>
+				<version>1.7.21</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>javax.servlet-api</artifactId>
+				<version>3.1.0</version>
+				<scope>provided</scope>
 			</dependency>
 
 			<dependency>
